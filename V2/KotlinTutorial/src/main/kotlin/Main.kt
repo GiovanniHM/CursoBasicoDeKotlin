@@ -8,7 +8,9 @@ fun main(args: Array<String>) {
     //menu()
 
     //arreglos()
-    arreglosUtil()
+    //arreglosUtil()
+   // expresiones()
+    funcion()
 
 
 }
@@ -168,6 +170,30 @@ fun arreglosUtil(){
 
     val suma2 = intPrimitive.sum()
 
-
-
 }
+
+fun expresiones(){
+    var x = 5
+    //Expreción
+    println("X es igual a 5? ${x==5}") // true
+
+    var mensaje = "El valor de x es $x"
+    x++
+    println("${mensaje.replace("es", "fue")}, x es igual a: $x")
+}
+
+//Funciones
+
+fun funcion(){
+    println("Raiz cuadrade de ${Math.sqrt(4.0)}")
+
+    fun averageNumbers(numbers: IntArray): Int {
+        val sumas = numbers.sum()
+        return sumas.div(numbers.size)
+    }
+    val numeros = intArrayOf(8, 7, 20)
+
+    println("El promedio de los numeros 8, 7 y 20 es ${averageNumbers(numeros)}")
+}
+
+
