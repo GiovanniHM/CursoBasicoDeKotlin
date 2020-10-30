@@ -10,7 +10,8 @@ fun main(args: Array<String>) {
     //arreglos()
     //arreglosUtil()
    // expresiones()
-    funcion()
+    //funcion()
+    lambdas()
 
 
 }
@@ -194,6 +195,19 @@ fun funcion(){
     val numeros = intArrayOf(8, 7, 20)
 
     println("El promedio de los numeros 8, 7 y 20 es ${averageNumbers(numeros)}")
+}
+
+fun lambdas(){
+ val lambdaf = {a:Int, c:Int -> a+c }
+
+    println(lambdaf(24,6))
+
+    //Iniciaizada
+    val lambdaIn = ({a:Int, c:Int -> a+c }(1,1))
+
+    println(lambdaIn)
+
+
 }
 
 
