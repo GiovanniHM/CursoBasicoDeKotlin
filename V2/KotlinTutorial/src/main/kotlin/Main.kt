@@ -1,4 +1,5 @@
 import com.sun.org.apache.xerces.internal.impl.xpath.XPath
+import model.Camera
 
 val list: ArrayList<String> = ArrayList()
 
@@ -12,6 +13,7 @@ fun main(args: Array<String>) {
    // expresiones()
     //funcion()
     lambdas()
+    clases()
 
 
 }
@@ -208,6 +210,17 @@ fun lambdas(){
     println(lambdaIn)
 
 
+}
+
+// ----------------- >Clases
+
+fun clases(){
+    val camera = Camera()
+    camera.turnOn()
+    println("La capara eatá: ${camera.getCameraStatus()}")
+
+    camera.setResolution(1080)
+    println("Resolution: ${camera.getResolution()}")
 }
 
 
