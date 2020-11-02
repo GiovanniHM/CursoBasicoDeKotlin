@@ -1,5 +1,6 @@
 import com.sun.org.apache.xerces.internal.impl.xpath.XPath
 import model.Camera
+import model.Shoe
 
 val list: ArrayList<String> = ArrayList()
 
@@ -12,8 +13,9 @@ fun main(args: Array<String>) {
     //arreglosUtil()
    // expresiones()
     //funcion()
-    lambdas()
-    clases()
+    //lambdas()
+    //clases()
+    classRestricciones()
 
 
 }
@@ -223,4 +225,10 @@ fun clases(){
     println("Resolution: ${camera.getResolution()}")
 }
 
-
+fun classRestricciones(){
+    var shoe = Shoe()
+    shoe.size = 39
+    println(shoe.size)
+    shoe.model = "Zapato"
+    println(shoe.model)
+}
