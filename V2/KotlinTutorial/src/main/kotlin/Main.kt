@@ -1,5 +1,6 @@
 import com.sun.org.apache.xerces.internal.impl.xpath.XPath
 import model.Camera
+import model.Movie
 import model.Shoe
 
 val list: ArrayList<String> = ArrayList()
@@ -16,6 +17,7 @@ fun main(args: Array<String>) {
     //lambdas()
     //clases()
     classRestricciones()
+    //dataclass()
 
 
 }
@@ -226,9 +228,16 @@ fun clases(){
 }
 
 fun classRestricciones(){
-    var shoe = Shoe()
+    var shoe = Shoe(358,"Nike")
     shoe.size = 39
     println(shoe.size)
     shoe.model = "Zapato"
     println(shoe.model)
+}
+
+fun dataclass(){
+    val movie = Movie("Coco", "Pixar", 160)
+    println("Pelicula: ${movie.title} \n Creador: ${movie.creator} \n Duracción: ${movie.duration}")
+
+
 }
